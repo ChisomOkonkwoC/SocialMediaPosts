@@ -11,9 +11,4 @@
     <ProjectReference Include="..\..\Post.Common\Post.Common\Post.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
