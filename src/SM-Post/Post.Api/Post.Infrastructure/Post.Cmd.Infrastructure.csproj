@@ -16,13 +16,4 @@
     <ProjectReference Include="..\..\Post.Cmd\Post.Cmd.Domain\Post.Cmd.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dispatchers\" />
-    <Folder Include="Config\" />
-    <Folder Include="Handlers\" />
-    <Folder Include="Stores\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Producers\" />
-  </ItemGroup>
-
 </Project>
