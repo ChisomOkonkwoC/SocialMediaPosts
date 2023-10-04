@@ -22,7 +22,6 @@
   <ItemGroup>
     <Folder Include="Consumers\" />
     <Folder Include="Converters\" />
-    <Folder Include="DataAccess\" />
     <Folder Include="Dispatchers\" />
     <Folder Include="Handlers\" />
     <Folder Include="Repositories\" />
