@@ -20,8 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Consumers\" />
-    <Folder Include="Converters\" />
     <Folder Include="Dispatchers\" />
   </ItemGroup>
 
