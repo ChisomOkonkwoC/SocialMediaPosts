@@ -23,7 +23,6 @@
     <Folder Include="Consumers\" />
     <Folder Include="Converters\" />
     <Folder Include="Dispatchers\" />
-    <Folder Include="Handlers\" />
   </ItemGroup>
 
 </Project>
