@@ -11,8 +11,8 @@ using EventHandler = Post.Query.Infrastructure.Handlers.EventHandler;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-Action<DbContextOptionsBuilder> configureDbContext;
-var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+Action<DbContextOptionsBuilder> configureDbContext = o => o.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
+/*var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
 if (env.Equals("Development.PostgreSQL"))
 {
@@ -21,7 +21,7 @@ if (env.Equals("Development.PostgreSQL"))
 else
 {
     configureDbContext = o => o.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
-}
+}*/
 
 builder.Services.AddDbContext<DatabaseContext>(configureDbContext);
 builder.Services.AddSingleton<DatabaseContextFactory>(new DatabaseContextFactory(configureDbContext));
