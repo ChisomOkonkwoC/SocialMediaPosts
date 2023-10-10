@@ -27,7 +27,10 @@ namespace Post.Query.Infrastructure.Consumers
                     .SetKeyDeserializer(Deserializers.Utf8)
                     .SetValueDeserializer(Deserializers.Utf8)
                     .Build();
-
+            if (string.IsNullOrEmpty(topic))
+            {
+                throw new ArgumentException("Topic cannot be null or empty.", nameof(topic));
+            }
             consumer.Subscribe(topic);
 
             while (true)

@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\CQRS-ES\CQRS.Core\CQRS.Core.csproj" />
     <ProjectReference Include="..\..\Post.Api\Post.Infrastructure\Post.Cmd.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Post.Common\Post.Common\Post.Common.csproj" />
