@@ -13,8 +13,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="DTOs\" />
-    <Folder Include="QueryHandler\" />
-    <Folder Include="Queries\" />
   </ItemGroup>
 
   <ItemGroup>
